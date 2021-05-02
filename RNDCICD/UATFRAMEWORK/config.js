@@ -1,7 +1,11 @@
 exports.config={
     directConnect:true,
     framework:'jasmine',
-    specs:['Smoke.js'],
+    suites: {
+        smoke: 'Smoke.js',
+        regression: 'Regression.js'
+      },
+   // specs:['Smoke.js'],
     capabilities:
     {
         browserName:'chrome'
